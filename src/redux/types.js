@@ -1,1 +1,1 @@
-export const CREATE_POST = 'create-post'
+export const CREATE_POST = 'post/create-post'

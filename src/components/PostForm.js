@@ -13,10 +13,9 @@ class PostForm extends React.Component {
 
   submitHandler = (e) => {
     e.preventDefault()
-    //console.log(this.state.title)
     const { title } = this.state
-
     const newPost = { title, id: Date.now().toString() }
+    this.props.createPost(newPost)
 
     console.log({ newPost })
 
