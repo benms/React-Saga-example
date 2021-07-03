@@ -1,1 +1,6 @@
 export const CREATE_POST = 'post/create-post'
+export const FETCH_POSTS = 'post/fetch-posts'
+export const SHOW_LOADER = 'app/show-loader'
+export const HIDE_LOADER = 'app/hide-loader'
+export const SHOW_ALERT = 'app/show-alert'
+export const HIDE_ALERT = 'app/hide-alert'
