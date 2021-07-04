@@ -5,12 +5,14 @@ import { rootReducer } from "./redux/rootReducer";
 import { Provider } from 'react-redux'
 import thunk from 'redux-thunk'
 import App from "./App";
+import { spamWordsMiddleware } from "./redux/middleware";
 import reportWebVitals from "./reportWebVitals";
 
 const store = createStore(
   rootReducer,
   compose(applyMiddleware(
-    thunk
+    thunk,
+    spamWordsMiddleware,
   ), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 );
 

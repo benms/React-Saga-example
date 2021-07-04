@@ -4,7 +4,8 @@ import {
    SHOW_LOADER,
    HIDE_LOADER,
    SHOW_ALERT,
-   HIDE_ALERT
+   HIDE_ALERT,
+   //REQUEST_POSTS
 } from "./types";
 
 export function createPost(post) {
